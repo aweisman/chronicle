@@ -1,0 +1,142 @@
+{
+    "alert": {
+        "category": "Cylance",
+        "rev": 1,
+        "script_name": "sensor-file-extraction.zeek",
+        "script_path": "bricata/core",
+        "severity": 1,
+        "signature": "Suspected Malware: Cylance",
+        "signature_id": 2969416262
+    },
+    "bricata": {
+        "dest_location": {
+            "city_name": "Columbia",
+            "country": "US",
+            "location": {
+                "lat": 39.217525,
+                "lon": -76.868729
+            },
+            "state": "Maryland"
+        },
+        "event_format": "eve",
+        "event_source": "cylance",
+        "event_uuid": "677eb562-42aa-9365-2ed3-779fa4602f69",
+        "flow_uuid": [
+            "bb01a46e-9660-f1ed-ab8a-ee14d20a6356"
+        ],
+        "no_throttle": true,
+        "sensor_fqdn": "se-demo-sensor01",
+        "sensor_hostname": "se-demo-sensor01",
+        "sensor_ipv4": "172.16.10.101",
+        "sensor_uuid": "cf640727-453a-b1f1-f6ad-49d52e866945",
+        "src_location": {
+            "city_name": "Columbia",
+            "country": "US",
+            "location": {
+                "lat": 39.217525,
+                "lon": -76.868729
+            },
+            "state": "Maryland"
+        },
+        "tag": [
+            "Suspected_Malware"
+        ]
+    },
+    "bro": {
+        "bytes_analyzed": 551492,
+        "conn_uids": [
+            "CMdcif35KnFdYowxGd"
+        ],
+        "download": true,
+        "fid": "Fo3AYG3vSGQlxfHBWh",
+        "file_description": "7Zip Archive",
+        "filename": "Fo3AYG3vSGQlxfHBWh",
+        "flow_uuid": [
+            "bb01a46e-9660-f1ed-ab8a-ee14d20a6356"
+        ],
+        "http_host": "172.16.101.129",
+        "http_method": "POST",
+        "http_referrer": "http://172.16.101.129:8000/",
+        "http_uri": "/",
+        "in_iface": [
+            "vxlan1"
+        ],
+        "md5": "ffbef6e87eae873963c14e2b5627f74a",
+        "mime_type": "application/x-7z-compressed",
+        "missing_bytes": 0,
+        "proto": "tcp",
+        "rx_host": "172.16.101.129",
+        "rx_port": 8000,
+        "script_name": "link_37",
+        "service": "HTTP",
+        "sha1": "bb1518110481e00a3e4dfe3b6fe8e29abdf1ae34",
+        "tx_host": "172.16.101.1",
+        "tx_port": 56933
+    },
+    "clisrv_id": "1:zkan5fwMJw/QrmM4QQKFXB3c5Iw=",
+    "community_id": "1:NT6euBJW1TdSSYxzQaxBsaeOz7Y=",
+    "cylance": {
+        "CentroidVersion": 2992131080,
+        "Determinant": "MODEL",
+        "ModelVersion": "131786662583688997",
+        "ParseStatus": "OK",
+        "SHA256": "94B2C17486433DAAD818C3727B69BADA3FCA7B42BE6BDA5764E175B9D9714B3C",
+        "SampleFormat": "PE",
+        "Score": -0.970472,
+        "Threshold": -0.8,
+        "explain": {
+            "SampleFormat": "PE",
+            "TTM": {
+                "features": {
+                    "Collection": {
+                        "BrowserInfoTheft": true,
+                        "CurrentUserInfoImports": true,
+                        "EnumerateFileImports": true,
+                        "EnumerateNetwork": true,
+                        "EnumerateProcessImports": true,
+                        "EnumerateVolumeImports": true,
+                        "OSInfoImports": true,
+                        "PossiblePasswords": true
+                    },
+                    "DataLoss": {
+                        "PipeUsage": true,
+                        "RPCUsage": true
+                    },
+                    "Deception": {
+                        "InjectProcessImports": true,
+                        "MSCryptoImports": true,
+                        "ProtectionExamination": true,
+                        "TempFileImports": true,
+                        "VirtualProtectImports": true
+                    },
+                    "Destruction": {
+                        "FileDirDeleteImports": true,
+                        "ServiceControlImports": true,
+                        "SpawnProcessImports": true,
+                        "TerminateProcessImports": true,
+                        "VirtualAllocImports": true
+                    }
+                },
+                "scores": {
+                    "Anomalies": 0,
+                    "Collection": 40,
+                    "DataLoss": 20,
+                    "Deception": 20,
+                    "Destruction": 41
+                }
+            }
+        },
+        "fn": "Fo3AYG3vSGQlxfHBWh.file.cylance",
+        "scanner": "cylance"
+    },
+    "dest_ip": "172.16.101.129",
+    "dest_port": 8000,
+    "event_type": "alert",
+    "in_iface": [
+        "vxlan1"
+    ],
+    "proto": "TCP",
+    "src_ip": "172.16.101.1",
+    "src_port": 56933,
+    "timestamp": "2021-11-18T20:44:30.840891+0000"
+}

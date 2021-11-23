@@ -1,0 +1,64 @@
+{
+    "alert": {
+        "category": "Threat Intel",
+        "rev": 1,
+        "script_name": "file-convictions.zeek",
+        "script_path": "bricata/intel",
+        "severity": 1,
+        "signature": "Threat Intel Indicator Match: 172.16.101.129:8000/",
+        "signature_id": 2375642061
+    },
+    "bricata": {
+        "dest_location": {
+            "city_name": "Columbia",
+            "country": "US",
+            "location": {
+                "lat": 39.217525,
+                "lon": -76.868729
+            },
+            "state": "Maryland"
+        },
+        "event_format": "eve",
+        "event_source": "bricata_alerts",
+        "event_uuid": "c90d7575-490c-b9ed-d46b-24a86aa67bfe",
+        "flow_uuid": [
+            "bb01a46e-9660-f1ed-ab8a-ee14d20a6356"
+        ],
+        "script_tags": [
+            "intel"
+        ],
+        "sensor_fqdn": "se-demo-sensor01",
+        "sensor_hostname": "se-demo-sensor01",
+        "sensor_ipv4": "172.16.10.101",
+        "sensor_uuid": "cf640727-453a-b1f1-f6ad-49d52e866945",
+        "src_location": {
+            "city_name": "Columbia",
+            "country": "US",
+            "location": {
+                "lat": 39.217525,
+                "lon": -76.868729
+            },
+            "state": "Maryland"
+        }
+    },
+    "bro": {
+        "fuid": "",
+        "indicator": "172.16.101.129:8000/",
+        "indicator_confidence": "probable",
+        "indicator_description": "Emailed malicious 7Zip Archive",
+        "mime_type": "",
+        "seen_where": "HTTP::IN_REFERRER_HEADER",
+        "service": "HTTP",
+        "sources": [
+            "Suspected Malware Alert"
+        ],
+        "uid": "CMdcif35KnFdYowxGd"
+    },
+    "dest_ip": "172.16.101.129",
+    "dest_port": 8000,
+    "event_type": "alert",
+    "proto": "tcp",
+    "src_ip": "172.16.101.1",
+    "src_port": 56933,
+    "timestamp": "2021-11-18T20:44:26.319473+0000"
+}
